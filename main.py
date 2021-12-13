@@ -42,3 +42,4 @@ async def upload_video(file: UploadFile = File(...)):
         shutil.copyfileobj(file.file, buffer)
 
     return {"file_name": file.filename}
+
